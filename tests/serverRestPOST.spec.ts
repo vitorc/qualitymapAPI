@@ -1,10 +1,10 @@
 import { test, expect } from '@playwright/test';
 
-test('should get something', async ({ request, baseURL }) => {
+test('Post a new USER as Admin', async ({ request, baseURL }) => {
     const newPost = await request.post(`${baseURL}usuarios`, {
         data: {
             "nome": "Fulano da Silva",
-            "email": "beltrano@qa3.com.br",
+            "email": "beltrano@qa5.com.br",
             "password": "teste",
             "administrador": "true"
         },
